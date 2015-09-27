@@ -5,7 +5,6 @@
 1.) Android Application : "ILoveMarshmallow"
 2.) Google Cloud Messaging Server : "ramangcmserver"
 
---------------------------------------------------------
 ##Alt-Android Application
 ======
 
