@@ -12,7 +12,7 @@ Description : This app takes input from the user for the search query(using the 
 
 Highlights :-
 1. Android Material Design (using Recycler and Card View) 
-![promisechains](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Search_Screen_Portrait_1.jpg)
+(https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Search_Screen_Portrait_1.jpg)
 
 --> Simple and Beautiful UI design (custom styles for buttons, edittext, fonts and lots more)
 --> Well handled configuration changes (dynamic view drawing)
