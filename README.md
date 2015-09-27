@@ -3,6 +3,7 @@
 ##This project contain two components :-
 
 1.) Android Application : "ILoveMarshmallow"
+
 2.) Google Cloud Messaging Server : "ramangcmserver"
 
 ##Android Application
@@ -67,8 +68,15 @@ This app takes input from the user for the search query(using the search endpoin
 
 
 ###Description
-A standalone GCM Server application build in pure java using Smack library (Smack is an Open Source XMPP (Jabber) client library for instant messaging). Running server application is necessary for sending and receiving push notifications.
+A standalone GCM Server application build in pure java using Smack library (Smack is an Open Source XMPP (Jabber) client library for instant messaging). Server application must be running for sending and receiving push notifications.
 
 ###Highlights
 
-####1. Android Material Design (using Recycler and Card View)
+####1. Smack UI for server
+![Server](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Server.png)
+
+
+
+####2. SQL database Schema
+![SQL_Database_1](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Sql_database_1.png)
+
