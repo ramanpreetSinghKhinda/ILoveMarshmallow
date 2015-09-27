@@ -1,0 +1,326 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@color/primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:contentInsetLeft="@dimen/view_margin"
+        app:contentInsetStart="@dimen/view_margin">
+
+        <TextView
+            android:id="@+id/app_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/login_title_string"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:visibility="invisible"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_view_height">
+
+                <ImageView
+                    android:id="@+id/img_back_on_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="12dp"
+                    android:src="@mipmap/ic_arrow_back" />
+
+                <EditText
+                    android:id="@+id/editText_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search_hint_string"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text"
+                    android:textColorHint="@color/hint_text" />
+
+                <ImageView
+                    android:id="@+id/clear_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="12dp"
+                    android:src="@mipmap/ic_search" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/app_toolbar"
+        android:background="@drawable/toolbar_shadow" />
+
+    <ScrollView
+        android:id="@+id/trending_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_shadow"
+        android:background="#eee"
+        android:clipToPadding="false"
+        android:paddingTop="0dp">
+
+        <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/view_margin"
+            android:paddingTop="@dimen/view_margin">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                card_view:cardBackgroundColor="@color/primary"
+                card_view:cardCornerRadius="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_latest_trending"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="16dp"
+                        android:text="Latest Trending"
+                        android:textColor="@color/white"
+                        android:textSize="22dp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_mens_shirts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_latest_trending"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/men_shirts" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/img_dune_london"
+                        android:background="#50000000"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/tap_shop_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_shop_mens_shirts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/img_dune_london"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:padding="@dimen/button_padding"
+                        android:text="@string/shop_button_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:tint="@color/white" />
+
+
+                    <ImageView
+                        android:id="@+id/img_dune_london"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_mens_shirts"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/dune_london" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/img_lady_jackets"
+                        android:background="#50000000"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/tap_shop_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_shop_dune_london"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/img_lady_jackets"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:padding="@dimen/button_padding"
+                        android:text="@string/shop_button_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:tint="@color/white" />
+
+
+                    <ImageView
+                        android:id="@+id/img_lady_jackets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_dune_london"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/women_jackets" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/img_women_jeans"
+                        android:background="#50000000"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/tap_shop_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_shop_women_jackets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/img_women_jeans"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:padding="@dimen/button_padding"
+                        android:text="@string/shop_button_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:tint="@color/white" />
+
+
+                    <ImageView
+                        android:id="@+id/img_women_jeans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_lady_jackets"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/women_jeans" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/img_women_heels"
+                        android:background="#50000000"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/tap_shop_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_shop_women_jeans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/img_women_heels"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:padding="@dimen/button_padding"
+                        android:text="@string/shop_button_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:tint="@color/white" />
+
+
+                    <ImageView
+                        android:id="@+id/img_women_heels"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_women_jeans"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/women_heels" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_women_heels"
+                        android:background="#50000000"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/tap_shop_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_shop_women_heels"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_women_heels"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:padding="@dimen/button_padding"
+                        android:text="@string/shop_button_string"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:tint="@color/white" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/recycler_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_toolbar"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_product_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

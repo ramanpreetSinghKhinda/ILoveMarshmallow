@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/dialog_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@color/primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:contentInsetLeft="@dimen/view_margin"
+        app:contentInsetStart="@dimen/view_margin">
+
+        <TextView
+            android:id="@+id/dialog_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/share_product_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bright_foreground_disabled_material_dark"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/shareProductDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bright_foreground_disabled_material_dark"
+            android:orientation="vertical"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/share_product_string"
+                android:textColor="@color/primary"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/friendEmailId"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/text_input_border"
+                android:gravity="center_vertical"
+                android:hint="@string/dialog_hint_email_string"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/loveMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/text_input_border"
+                android:gravity="center_vertical"
+                android:hint="@string/dialog_hint_msg_string"
+                android:maxLength="50"
+                android:maxLines="4"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/primary" />
+
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:alpha=".90"
+                android:background="@drawable/button_bkg"
+                android:text="Share Product"
+                android:textColor="#FAFAFA" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
