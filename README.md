@@ -2,9 +2,9 @@
 
 ##This project contain two components :-
 
-1.) Android Application : "ILoveMarshmallow"
+1.) Android Application : "ILoveMarshmallow" (client Android app)
 
-2.) Google Cloud Messaging Server : "ramangcmserver"
+2.) Google Cloud Messaging Server : "ramangcmserver" (GCM Server Java application) 
 
 ##Android Application
 
