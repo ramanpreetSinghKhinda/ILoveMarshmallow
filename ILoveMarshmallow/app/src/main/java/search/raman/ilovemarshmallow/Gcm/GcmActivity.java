@@ -147,6 +147,11 @@ public class GcmActivity {
             Log.v(Globals.TAG, "You must register first to send clear notification message");
             return;
         }
+        if(notification_key == null || (notification_key != null && "".equals(notification_key))){
+            Log.v(Globals.TAG, "Notification key does not exist : "+notification_key);
+            return;
+        }
+        
         new AsyncTask<String, Void, String>() {
             @Override
             protected String doInBackground(String... params) {
@@ -159,13 +164,15 @@ public class GcmActivity {
                     msg = "Sent notification clear message";
                 } catch (IOException ex) {
                     msg = "Error :" + ex.getMessage();
+                } catch (IllegalArgumentException ex){
+                    msg = "Error :" + ex.getMessage();
                 }
                 return msg;
             }
 
             @Override
             protected void onPostExecute(String msg) {
-                sendMessage(Globals.GCM_NOTIFICATION_BROADCAST_LISTENER, msg);
+                Log.v(Globals.TAG,msg);
             }
         }.execute(notification_key);
 
