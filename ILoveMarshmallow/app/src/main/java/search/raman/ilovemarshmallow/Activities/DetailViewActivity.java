@@ -211,8 +211,10 @@ public class DetailViewActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String receiverEmailId = friendEmailId.getText().toString();
 
-                // Call the sendNotification() API for sending GCM Push Notification to a particular user
-                if (gcmObject.sendNotification(currentUserEmailId, receiverEmailId, loveMessage.getText().toString(), asinId, productName, productImageUrlString, brandName, productPrice, productRating)) {
+                if (!(utility.isValidEmail(receiverEmailId))) {
+                    showToast("Email id is not valid", Toast.LENGTH_SHORT);
+                } else if (gcmObject.sendNotification(currentUserEmailId, receiverEmailId, loveMessage.getText().toString(), asinId, productName, productImageUrlString, brandName, productPrice, productRating)) {
+                    // Call the sendNotification() API for sending GCM Push Notification to a particular user
                     showToast("Message Sent Successfully", Toast.LENGTH_LONG);
                     shareProductDialog.dismiss();
                 }
