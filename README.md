@@ -6,8 +6,8 @@
 
 2.) Google Cloud Messaging Server : "ramangcmserver" (GCM Server Java application) 
 
-##Android Application
-
+Android Application
+----
 
 ###Description
 This app takes input from the user for the search query(using the search endpoint), load the results on the page into a recycler view and clicking on any of the products shows the product details (using the product information endpoint).
@@ -63,9 +63,8 @@ This app takes input from the user for the search query(using the search endpoin
 ![Getting_Notified_Screen](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Getting_Notified_Screen.jpg)
 
 
--------------------------------
-##Google Cloud Messaging Server
-
+Google Cloud Messaging Server
+----
 
 ###Description
 A standalone GCM Server application build in pure java using Smack library (Smack is an Open Source XMPP (Jabber) client library for instant messaging). Server application must be running for sending and receiving push notifications.
@@ -80,3 +79,20 @@ A standalone GCM Server application build in pure java using Smack library (Smac
 ####2. SQL database Schema
 ![SQL_Database_1](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Sql_database_1.png)
 
+
+Developer
+---------
+Ramanpreet Singh Khinda (rkhinda@buffalo.edu)</br>
+[![website](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_website.png)](https://branded.me/ramanpreet1990)		[![googleplay](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_google_play.png)](https://play.google.com/store/apps/details?id=suny.buffalo.mis.research&hl=en)		[![twitter](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_twitter.png)](https://twitter.com/dk_sunny1)		[![linkedin](https://raw.githubusercontent.com/ramanpreet1990/CSE_586_Simplified_Amazon_Dynamo/master/Resources/ic_linkedin.png)](https://www.linkedin.com/in/ramanpreet1990)
+
+
+License
+----------
+Copyright {2016} 
+{Ramanpreet Singh Khinda rkhinda@buffalo.edu} 
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
