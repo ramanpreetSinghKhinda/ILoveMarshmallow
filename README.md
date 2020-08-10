@@ -9,18 +9,18 @@
 Android Application
 ----
 
-###Description
+### Description
 This app takes input from the user for the search query(using the search endpoint), load the results on the page into a recycler view and clicking on any of the products shows the product details (using the product information endpoint).
 
-###Highlights
+### Highlights
 
-####1. Android Material Design (using Recycler and Card View)
+#### 1. Android Material Design (using Recycler and Card View)
 
 ![Search_Screen_Portrait_1](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Search_Screen_Portrait_1.jpg)
 
 
 
-####2. Simple and Beautiful UI design (custom styles for buttons, edittext, fonts and lots more)
+#### 2. Simple and Beautiful UI design (custom styles for buttons, edittext, fonts and lots more)
 
 ![Login_Screen](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Login_Screen.jpg) 
 
@@ -32,7 +32,7 @@ This app takes input from the user for the search query(using the search endpoin
 
 
 
-####3. Well handled configuration changes (dynamic view drawing using screen size calculation)
+#### 3. Well handled configuration changes (dynamic view drawing using screen size calculation)
 
 ![Search_Screen_Portrait_2](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Search_Screen_Portrait_2.jpg) 
 
@@ -40,7 +40,7 @@ This app takes input from the user for the search query(using the search endpoin
 
 
 
-####4. Feature to share the product with anyone who is using this same app anywhere in the world (using Google Cloud Messaging)
+#### 4. Feature to share the product with anyone who is using this same app anywhere in the world (using Google Cloud Messaging)
 
 ![Detail_View_Screen](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Detail_View_Screen.jpg)
 
@@ -48,17 +48,17 @@ This app takes input from the user for the search query(using the search endpoin
 
 
 
-####5. Feature of sending push notifications
+#### 5. Feature of sending push notifications
 
 ![Notification_View](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Notification_View.jpg)
 
 
 
-####6. Feature of notification sync across multiple devices logged in with same user id
+#### 6. Feature of notification sync across multiple devices logged in with same user id
 
 
 
-####7. Feature of getting notified when a user log in on another device with same email id
+#### 7. Feature of getting notified when a user log in on another device with same email id
 
 ![Getting_Notified_Screen](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Getting_Notified_Screen.jpg)
 
@@ -66,17 +66,17 @@ This app takes input from the user for the search query(using the search endpoin
 Google Cloud Messaging Server
 ----
 
-###Description
+### Description
 A standalone GCM Server application build in pure java using Smack library (Smack is an Open Source XMPP (Jabber) client library for instant messaging). Server application must be running for sending and receiving push notifications.
 
-###Highlights
+### Highlights
 
-####1. Smack UI for server
+#### 1. Smack UI for server
 ![Server](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Server.png)
 
 
 
-####2. SQL database Schema
+#### 2. SQL database Schema
 ![SQL_Database_1](https://github.com/ramanpreeet1990/zappos_ecommerce/blob/master/Images/Sql_database_1.png)
 
 
